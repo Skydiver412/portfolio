@@ -16,24 +16,30 @@ const Education = () => {
           <h2 className="text-3xl md:text-4xl font-bold">Education Quality</h2>
         </div>
         <div className="mt-6 lgl:mt-14 w-full h-auto border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
-          <ResumeCard
-            title="BSc in Computer Science"
-            subTitle="University of DVI (2006 - 2010)"
-            result="3.90/4"
-            des="The training provided by universities in order to prepare people to work in various sectors of the economy or areas of culture."
-          />
           {/* <ResumeCard
-            title="AS - Science & Information"
-            subTitle="SuperKing College (2001 - 2005)"
-            result="4.75/5"
-            des="Higher education is tertiary education leading to award of an academic degree. Higher education, also called post-secondary education."
+            title="BS - Web Development"
+            subTitle="University of South Florida (TBD - TBD)"
+            result="4.0/4"
+            des="Focused on front-end and back-end web development using HTML, CSS, JavaScript, React, Node.js, and database systems. Strong foundation for a full-stack web development career."
+          /> */}
+          <ResumeCard
+            title="AS - Web Development"
+            subTitle="Hillsborough Community College (2023 - 2025)"
+            result="4.0/5"
+            des="Focused on front-end and back-end web development using HTML, CSS, JavaScript, React, Node.js, and database systems. Strong foundation for a full-stack web development career."
           />
           <ResumeCard
-            title="Secondary School Education"
-            subTitle="Kingstar Secondary School (1998 - 2000)"
-            result="5.00/5"
-            des="Secondary education or post-primary education covers two phases on the International Standard Classification of Education scale."
-          /> */}
+            title="Associate in Specialized Technology"
+            subTitle="ITT Technical Institute (2005 - 2007)"
+            result="2.70/4"
+            des="Studied Information Technology with a concentration in multimedia production. Gained foundational skills in digital media, design principles, and basic programming."
+          />
+          <ResumeCard
+            title="High School Diploma"
+            subTitle="Keystone Oaks H.S. (1992 - 1996)"
+            result="1.77/4"
+            des="Completed general education in Pittsburgh, PA. Early interest in technology and computing laid the groundwork for a future in development."
+          />
         </div>
       </div>
       {/* part Two */}

@@ -19,8 +19,10 @@ const Contact = () => {
   };
   // ========== Email Validation end here ================
 
-  const handleSend = (e) => {
+  const handleSend = async (e) => {
     e.preventDefault();
+
+    // Frontend validation
     if (username === "") {
       setErrMsg("Username is required!");
     } else if (phoneNumber === "") {
@@ -30,21 +32,49 @@ const Contact = () => {
     } else if (!emailValidation(email)) {
       setErrMsg("Give a valid Email!");
     } else if (subject === "") {
-      setErrMsg("Plese give your Subject!");
+      setErrMsg("Please give your Subject!");
     } else if (message === "") {
       setErrMsg("Message is required!");
     } else {
-      setSuccessMsg(
-        `Thank you dear ${username}, Your Messages has been sent Successfully!`
-      );
+      // Clear errors
       setErrMsg("");
-      setUsername("");
-      setPhoneNumber("");
-      setEmail("");
-      setSubject("");
-      setMessage("");
+
+      // Backend submission
+      try {
+        const response = await fetch("http://localhost:5000/api/contact", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            username,
+            phoneNumber,
+            email,
+            subject,
+            message,
+          }),
+        });
+
+        const data = await response.json();
+        console.log("Server response:", data);
+
+        setSuccessMsg(
+          `Thank you dear ${username}, Your Message has been sent Successfully!`
+        );
+
+        // Clear the form
+        setUsername("");
+        setPhoneNumber("");
+        setEmail("");
+        setSubject("");
+        setMessage("");
+      } catch (error) {
+        console.error("Error sending message:", error);
+        setErrMsg("Something went wrong. Please try again later.");
+      }
     }
   };
+
   return (
     <section
       id="contact"

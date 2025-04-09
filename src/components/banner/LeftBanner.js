@@ -1,17 +1,25 @@
 import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaReact } from "react-icons/fa";
-import { SiTailwindcss, SiFigma, SiNextdotjs } from "react-icons/si";
+import { FaReact } from "react-icons/fa";
+import {
+  SiTailwindcss,
+  SiFigma,
+  SiNextdotjs,
+  SiAdobecreativecloud,
+} from "react-icons/si";
+import { VscVscode } from "react-icons/vsc";
+import SocialIcons from "../layouts/SocialIcons";
 
 const LeftBanner = () => {
   const [text] = useTypewriter({
     words: [
-      "Professional Coder.",
-      "Full Stack Developer.",
-      "UI Designer.",
-      "Skydiver.",
-      "Cook.",
-      "Marine.",
+      "Full Stack Web Developer.",
+      "Creative Problem Solver.",
+      "UI/UX Enthusiast.",
+      "Multimedia Creator.",
+      "Skydiver Since 2011.",
+      "Veteran Marine.",
+      "Lifelong Learner.",
     ],
     loop: true,
     typeSpeed: 20,
@@ -35,9 +43,11 @@ const LeftBanner = () => {
           />
         </h2>
         <p className="text-base font-bodyFont leading-6 tracking-wide">
-          I use animation as a third dimension by which to simplify experiences
-          and kuiding thro each and every interaction. I'm not adding motion
-          just to spruce things up, but doing it in ways that.
+          I'm a web developer with a passion for clean design, smart
+          functionality, and user-focused experiences. With a foundation in
+          multimedia, a drive toward full-stack development, and years of
+          hands-on learning, I build responsive, accessible, and scalable web
+          apps—always with an eye on performance, clarity, and creativity.
         </p>
       </div>
       <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between">
@@ -46,15 +56,7 @@ const LeftBanner = () => {
             Find me in
           </h2>
           <div className="flex gap-4">
-            <span className="bannerIcon">
-              <FaFacebookF />
-            </span>
-            <span className="bannerIcon">
-              <FaTwitter />
-            </span>
-            <span className="bannerIcon">
-              <FaLinkedinIn />
-            </span>
+            <SocialIcons />
           </div>
         </div>
         <div>
@@ -66,13 +68,13 @@ const LeftBanner = () => {
               <FaReact />
             </span>
             <span className="bannerIcon">
-              <SiNextdotjs />
+              <SiAdobecreativecloud />
             </span>
             <span className="bannerIcon">
               <SiTailwindcss />
             </span>
             <span className="bannerIcon">
-              <SiFigma />
+              <VscVscode />
             </span>
           </div>
         </div>
