@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import { Link } from "react-scroll";
 import { logo } from "../../assets/index";
 import { navLinksdata } from "../../constants/index";
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
+import SocialIcons from "../layouts/SocialIcons";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -46,12 +46,13 @@ const Navbar = () => {
             <div className="flex flex-col gap-8 py-2 relative">
               <div>
                 <img className="w-32" src={logo} alt="logo" />
-                <p className="text-sm text-gray-400 mt-2">
-                  Amet in labore officia Lorem culpa duis magna. Ea mollit amet
-                  ullamco amet anim velit velit. Voluptate mollit fugiat mollit
-                  ipsum et dolor ex ex deserunt magna ullamco. Officia id irure
-                  voluptate mollit excepteur pariatur. Consequat exercitation
-                  elit consectetur sit.
+                <p className="text-sm text-gray-200 mt-2">
+                  I'm a web developer with a passion for clean design, smart
+                  functionality, and user-focused experiences. With a foundation
+                  in multimedia, a drive toward full-stack development, and
+                  years of hands-on learning, I build responsive, accessible,
+                  and scalable web apps—always with an eye on performance,
+                  clarity, and creativity.
                 </p>
               </div>
               <ul className="flex flex-col gap-4">
@@ -79,15 +80,7 @@ const Navbar = () => {
                   Find me in
                 </h2>
                 <div className="flex gap-4">
-                  <span className="bannerIcon">
-                    <FaFacebookF />
-                  </span>
-                  <span className="bannerIcon">
-                    <FaTwitter />
-                  </span>
-                  <span className="bannerIcon">
-                    <FaLinkedinIn />
-                  </span>
+                  <SocialIcons />
                 </div>
               </div>
               <span

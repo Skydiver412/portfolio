@@ -1,18 +1,27 @@
 import React from "react";
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaReact } from "react-icons/fa";
+import {
+  // FaTwitter,FaFacebookF,
+  FaLinkedinIn,
+} from "react-icons/fa";
 
 const SocialIcons = () => {
   return (
     <>
-      <span className="bannerIcon">
+      {/* <span className="bannerIcon">
         <FaFacebookF />
-      </span>
-      <span className="bannerIcon">
+      </span> */}
+      {/* <span className="bannerIcon">
         <FaTwitter />
-      </span>
-      <span className="bannerIcon">
-        <FaLinkedinIn />
-      </span>
+      </span> */}
+      <a
+        href="https://www.linkedin.com/in/brian-kunkel-6b1a41196/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span className="bannerIcon" title="LinkedIn profile">
+          <FaLinkedinIn />
+        </span>
+      </a>
     </>
   );
 };

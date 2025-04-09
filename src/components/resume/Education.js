@@ -12,9 +12,10 @@ const Education = () => {
       {/* part one */}
       <div>
         <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
-          <p className="text-sm text-designColor tracking-[4px]">1996 - 2010</p>
+          <p className="text-sm text-designColor tracking-[4px]">1996 - TBD</p>
           <h2 className="text-3xl md:text-4xl font-bold">Education Quality</h2>
         </div>
+
         <div className="mt-6 lgl:mt-14 w-full h-auto border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           {/* <ResumeCard
             title="BS - Web Development"
@@ -43,7 +44,7 @@ const Education = () => {
         </div>
       </div>
       {/* part Two */}
-
+      {/*
       <div>
         <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
           <p className="text-sm text-designColor tracking-[4px]">2010 - 2022</p>
@@ -56,7 +57,7 @@ const Education = () => {
             result="USA"
             des="Google's hiring process is an important part of our culture. Googlers care deeply about their teams and the people who make them up."
           />
-          {/* <ResumeCard
+          <ResumeCard
             title="Web Developer & Trainer"
             subTitle="Apple Developer Team - (2012 - 2016)"
             result="MALAYSIA"
@@ -67,9 +68,9 @@ const Education = () => {
             subTitle="Nike - (2020 - 2011)"
             result="Oman"
             des="The Oman economy has grown strongly over recent years, having transformed itself from a producer and innovation-based economy."
-          /> */}
+          /> 
         </div>
-      </div>
+      </div>*/}
     </motion.div>
   );
 };

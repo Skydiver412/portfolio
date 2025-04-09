@@ -1,5 +1,4 @@
 import React from "react";
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import { contactImg } from "../../assets";
 import SocialIcons from "../layouts/SocialIcons";
 
@@ -15,19 +14,22 @@ const ContactLeft = () => {
         alt="contactImg"
       />
       <div className="flex flex-col gap-4">
-        <h3 className="text-3xl font-bold text-white">John Doe</h3>
+        <h3 className="text-3xl font-bold text-white">Brian Kunkel</h3>
         <p className="text-lg font-normal text-gray-400">
-          MERN Stack Developer
+          Full-Stack Web Developer
         </p>
         <p className="text-base text-gray-400 tracking-wide">
-          Exercitation velit sint reprehenderit anim do velit exercitation
-          officia amet non adipisicing.
+          I'm always open to connecting with fellow developers, sharing ideas,
+          or discussing new opportunities. Feel free to reach out to me via
+          email!
         </p>
-        <p className="text-base text-gray-400 flex items-center gap-2">
+
+        {/* <p className="text-base text-gray-400 flex items-center gap-2">
           Phone: <span className="text-lightText">+968 97859628</span>
-        </p>
+        </p> */}
         <p className="text-base text-gray-400 flex items-center gap-2">
-          Email: <span className="text-lightText">skydiver412@yahoo.com</span>
+          Email:{" "}
+          <span className="text-lightText">bkunkel@hawkmail.hccfl.edu</span>
         </p>
       </div>
       <div className="flex flex-col gap-4">

@@ -1,12 +1,7 @@
 import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { FaReact } from "react-icons/fa";
-import {
-  SiTailwindcss,
-  SiFigma,
-  SiNextdotjs,
-  SiAdobecreativecloud,
-} from "react-icons/si";
+import { SiTailwindcss, SiAdobecreativecloud } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 import SocialIcons from "../layouts/SocialIcons";
 
@@ -64,16 +59,16 @@ const LeftBanner = () => {
             BEST SKILL ON
           </h2>
           <div className="flex gap-4">
-            <span className="bannerIcon">
+            <span className="bannerIcon" title="React">
               <FaReact />
             </span>
-            <span className="bannerIcon">
+            <span className="bannerIcon" title="Adobe Creative Cloud">
               <SiAdobecreativecloud />
             </span>
-            <span className="bannerIcon">
+            <span className="bannerIcon" title="Tailwind CSS">
               <SiTailwindcss />
             </span>
-            <span className="bannerIcon">
+            <span className="bannerIcon" title="VSCode">
               <VscVscode />
             </span>
           </div>
