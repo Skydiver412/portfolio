@@ -12,7 +12,7 @@ const Education = () => {
       {/* part one */}
       <div>
         <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
-          <p className="text-sm text-designColor tracking-[4px]">1998 - 2010</p>
+          <p className="text-sm text-designColor tracking-[4px]">1996 - 2010</p>
           <h2 className="text-3xl md:text-4xl font-bold">Education Quality</h2>
         </div>
         <div className="mt-6 lgl:mt-14 w-full h-auto border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
@@ -25,7 +25,7 @@ const Education = () => {
           <ResumeCard
             title="AS - Web Development"
             subTitle="Hillsborough Community College (2023 - 2025)"
-            result="4.0/5"
+            result="4.0/4"
             des="Focused on front-end and back-end web development using HTML, CSS, JavaScript, React, Node.js, and database systems. Strong foundation for a full-stack web development career."
           />
           <ResumeCard

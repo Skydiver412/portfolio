@@ -20,7 +20,7 @@ export const featuresData = [
     id: 3,
     title: "UI/UX Design with Purpose",
     icon: <SiAntdesign />,
-    des: "Designing intuitive, accessible interfaces using Figma and TailwindCSS—focused on user experience and performance, not just visual appeal.",
+    des: "Designing intuitive, accessible interfaces using Bootstrap and TailwindCSS—focused on user experience and performance, not just visual appeal.",
   },
   {
     id: 4,
