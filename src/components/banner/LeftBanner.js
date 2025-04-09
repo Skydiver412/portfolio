@@ -29,12 +29,12 @@ const LeftBanner = () => {
           Hi, I'm
           <span className="text-designColor capitalize"> Brian Kunkel</span>
         </h1>
-        <h2 className="text-2xl lgl:text-4xl font-bold text-white">
+        <h2 className="text-2xl mdl:text-4xl font-bold text-white">
           a <span>{text}</span>
           <Cursor
             cursorBlinking="false"
             cursorStyle="|"
-            cursorColor="#ff014f"
+            cursorColor="#ffea96"
           />
         </h2>
         <p className="text-base font-bodyFont leading-6 tracking-wide">
