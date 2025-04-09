@@ -29,7 +29,7 @@ const LeftBanner = () => {
           Hi, I'm
           <span className="text-designColor capitalize"> Brian Kunkel</span>
         </h1>
-        <h2 className="text-3xl lgl:text-4xl font-bold text-white">
+        <h2 className="text-2xl lgl:text-4xl font-bold text-white">
           a <span>{text}</span>
           <Cursor
             cursorBlinking="false"
