@@ -47,7 +47,7 @@ const Achievement = () => {
           <p className="text-sm text-designColor tracking-[4px]">
             2011 - Present
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold">Skydiving</h2>
+          <h2 className="text-3xl md:text-4xl font-bold">Personal</h2>
         </div>
         <div className="w-full h-auto border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           <ResumeCard
@@ -56,18 +56,6 @@ const Achievement = () => {
             result="Since 2011"
             des="Surpassed 1,000 skydives while promoting the therapeutic and personal growth benefits of skydiving through community outreach and tandem jump experiences."
           />
-          {/* <ResumeCard
-            title="Lorem ipsum dolor sit amet."
-            subTitle="Lorem ipsum dolor sit amet alternative."
-            result="Success"
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora itaque accusamus corporis dolor debitis natus sapiente, voluptates possimus minima totam!"
-          />
-          <ResumeCard
-            title="Lorem ipsum dolor sit amet."
-            subTitle="Lorem ipsum dolor sit amet alternative."
-            result="Success"
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora itaque accusamus corporis dolor debitis natus sapiente, voluptates possimus minima totam!"
-          /> */}
         </div>
       </div>
     </motion.div>
