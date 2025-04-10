@@ -1,9 +1,7 @@
 import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import { FaReact } from "react-icons/fa";
-import { SiTailwindcss, SiAdobecreativecloud } from "react-icons/si";
-import { VscVscode } from "react-icons/vsc";
 import SocialIcons from "../layouts/SocialIcons";
+import SkillsIcons from "../layouts/SkillsIcons";
 
 const LeftBanner = () => {
   const [text] = useTypewriter({
@@ -59,18 +57,7 @@ const LeftBanner = () => {
             BEST SKILL ON
           </h2>
           <div className="flex gap-4">
-            <span className="bannerIcon" title="React">
-              <FaReact />
-            </span>
-            <span className="bannerIcon" title="Adobe Creative Cloud">
-              <SiAdobecreativecloud />
-            </span>
-            <span className="bannerIcon" title="Tailwind CSS">
-              <SiTailwindcss />
-            </span>
-            <span className="bannerIcon" title="VSCode">
-              <VscVscode />
-            </span>
+            <SkillsIcons />
           </div>
         </div>
       </div>
