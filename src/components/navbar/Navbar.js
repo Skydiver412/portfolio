@@ -76,7 +76,7 @@ const Navbar = () => {
                 ))}
               </ul>
               <div className="flex flex-col gap-4">
-                <h2 className="text-base uppercase font-titleFont mb-4">
+                <h2 className="text-base text-gray-200 uppercase font-titleFont mb-4">
                   Find me in
                 </h2>
                 <div className="flex gap-4">
