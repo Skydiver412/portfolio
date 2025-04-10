@@ -16,6 +16,12 @@ const Experience = () => {
         </div>
         <div className="w-full h-auto border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           <ResumeCard
+            title="Grill Cook"
+            subTitle="Chuck Lager's - Wesley Chapel, FL (2022 - 2023)"
+            result="USA"
+            des="Prepared and grilled high-quality meats, seafood, and vegetables in a fast-paced, high-volume environment. Ensured food quality and consistency, collaborated closely with kitchen staff to meet customer demands, and maintained a clean and organized workspace."
+          />
+          <ResumeCard
             title="Sous Chef"
             subTitle="Sienna Mercato – Pittsburgh, PA (2014 - 2021)"
             result="USA"
