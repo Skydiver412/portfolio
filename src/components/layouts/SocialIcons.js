@@ -3,6 +3,7 @@ import {
   // FaTwitter,FaFacebookF,
   FaLinkedinIn,
 } from "react-icons/fa";
+import { BsGithub } from "react-icons/bs";
 
 const SocialIcons = () => {
   return (
@@ -20,6 +21,15 @@ const SocialIcons = () => {
       >
         <span className="bannerIcon" title="LinkedIn profile">
           <FaLinkedinIn />
+        </span>
+      </a>
+      <a
+        href="https://github.com/Skydiver412"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span className="bannerIcon" title="Github profile">
+          <BsGithub />
         </span>
       </a>
     </>

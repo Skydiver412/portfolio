@@ -36,42 +36,57 @@ const Contact = () => {
     } else if (message === "") {
       setErrMsg("Message is required!");
     } else {
-      // Clear errors
+      // Clear previous errors
       setErrMsg("");
 
-      // Backend submission
-      try {
-        const response = await fetch("http://localhost:5000/api/contact", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            username,
-            phoneNumber,
-            email,
-            subject,
-            message,
-          }),
-        });
+      // Show alert with form data
+      alert(
+        `Name: ${username}\nPhone: ${phoneNumber}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`
+      );
 
-        const data = await response.json();
-        console.log("Server response:", data);
+      // Show temporary success message
+      setSuccessMsg(`Thank you ${username}, your message has been recorded.`);
 
-        setSuccessMsg(
-          `Thank you dear ${username}, Your Message has been sent Successfully!`
-        );
+      // Clear form inputs
+      setUsername("");
+      setPhoneNumber("");
+      setEmail("");
+      setSubject("");
+      setMessage("");
 
-        // Clear the form
-        setUsername("");
-        setPhoneNumber("");
-        setEmail("");
-        setSubject("");
-        setMessage("");
-      } catch (error) {
-        console.error("Error sending message:", error);
-        setErrMsg("Something went wrong. Please try again later.");
-      }
+      // Clear success message after a short delay
+      setTimeout(() => {
+        setSuccessMsg("");
+      }, 4000);
+
+      // ============ Backend submission needs tweaked =============
+      /*
+    try {
+      const response = await fetch("http://localhost:5000/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          username,
+          phoneNumber,
+          email,
+          subject,
+          message,
+        }),
+      });
+
+      const data = await response.json();
+      console.log("Server response:", data);
+
+      setSuccessMsg(
+        `Thank you dear ${username}, Your Message has been sent Successfully!`
+      );
+    } catch (error) {
+      console.error("Error sending message:", error);
+      setErrMsg("Something went wrong. Please try again later.");
+    }
+    */
     }
   };
 

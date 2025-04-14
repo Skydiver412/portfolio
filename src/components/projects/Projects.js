@@ -28,8 +28,8 @@ const Projects = () => {
           title="React App"
           des="A modern, responsive portfolio built with React and Tailwind CSS. Showcases my skills, achievements, and projects with smooth animations and clean UI/UX design."
           src={portfolioImg}
-          linkGit="https://github.com/Skydiver412/portfolio"
-          linkWeb="https://portfolio-git-main-brian-kunkels-projects.vercel.app"
+          // linkGit="https://github.com/Skydiver412/portfolio"
+          // linkWeb="https://portfolio-git-main-brian-kunkels-projects.vercel.app"
         />
         <ProjectsCard
           title="Adobe Illustrator – Character Fan Art"
@@ -45,7 +45,7 @@ const Projects = () => {
           linkWeb=""
         />
         <ProjectsCard
-          title="Adobe InDesign – Skyhigh News Newsletter"
+          title="Adobe InDesign – Newsletter"
           des="Created a fictional skydiving newsletter concept using InDesign. Designed layout, custom graphics, and content for a professional look—laying the groundwork for a potential real-world publication."
           src={newsletter}
           linkWeb=""
@@ -57,16 +57,22 @@ const Projects = () => {
           linkWeb=""
         />
 
-        <ProjectsCard
-          title="Blender 3D Environment"
+        {/* <ProjectsCard
+          title="Blender 3D - Environment"
           des="Created a stylized 3D landscape featuring a weathered brick ruin, dynamic water, and layered vegetation using Blender. Focused on composition, lighting, and realism."
           src={environment}
           linkWeb=""
-        />
+        /> */}
         <ProjectsCard
           title="Blender 3D – Autumn Farmhouse"
           des="Modeled and textured a rustic farmhouse environment using Blender. Focused on natural lighting, realistic materials, and a warm fall atmosphere with dynamic clouds and foliage."
           src={farmhouse}
+          linkWeb=""
+        />
+        <ProjectsCard
+          title="Blender 3D - Environment"
+          des="Created a stylized 3D landscape featuring a weathered brick ruin, dynamic water, and layered vegetation using Blender. Focused on composition, lighting, and realism."
+          src={environment}
           linkWeb=""
         />
       </div>

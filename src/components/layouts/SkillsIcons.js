@@ -1,7 +1,7 @@
 import React from "react";
 import { FaReact } from "react-icons/fa";
-import { SiTailwindcss, SiAdobecreativecloud } from "react-icons/si";
-import { VscVscode } from "react-icons/vsc";
+import { SiTailwindcss, SiAdobecreativecloud, SiBlender } from "react-icons/si";
+// import { VscVscode } from "react-icons/vsc";
 
 const SkillsIcons = () => {
   return (
@@ -16,7 +16,7 @@ const SkillsIcons = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <span className="bannerIcon" title="React">
+        <span className="bannerIcon" title="Adobe CC">
           <SiAdobecreativecloud />
         </span>
       </a>
@@ -25,17 +25,17 @@ const SkillsIcons = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <span className="bannerIcon" title="React">
+        <span className="bannerIcon" title="Tailwind CSS">
           <SiTailwindcss />
         </span>
       </a>
       <a
-        href="https://code.visualstudio.com/download"
+        href="https://www.blender.org/"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <span className="bannerIcon" title="React">
-          <VscVscode />
+        <span className="bannerIcon" title="Blender3d">
+          <SiBlender />
         </span>
       </a>
     </>
