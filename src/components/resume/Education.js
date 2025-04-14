@@ -27,7 +27,9 @@ const Education = () => {
             title="AS - Web Development"
             subTitle="Hillsborough Community College (2023 - 2025)"
             result="4.0/4"
-            des="Focused on front-end and back-end web development using HTML, CSS, JavaScript, React, Node.js, and database systems. Strong foundation for a full-stack web development career."
+            des="Focused on front-end and back-end web development using HTML, CSS, JavaScript, React, Node.js, and database systems. 
+            Combines strong technical skills with a creative edge in multimedia, 
+            including experience with graphic design and digital media tools—delivering full-stack applications that are both functional and visually compelling."
           />
           <ResumeCard
             title="Associate in Specialized Technology"
