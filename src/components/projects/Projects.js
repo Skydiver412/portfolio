@@ -8,6 +8,7 @@ import {
   farmhouse,
   skyHighLogo,
   newsletter,
+  hacker,
 } from "../../assets";
 import ProjectsCard from "./ProjectsCard";
 
@@ -57,12 +58,6 @@ const Projects = () => {
           linkWeb=""
         />
 
-        {/* <ProjectsCard
-          title="Blender 3D - Environment"
-          des="Created a stylized 3D landscape featuring a weathered brick ruin, dynamic water, and layered vegetation using Blender. Focused on composition, lighting, and realism."
-          src={environment}
-          linkWeb=""
-        /> */}
         <ProjectsCard
           title="Blender 3D – Autumn Farmhouse"
           des="Modeled and textured a rustic farmhouse environment using Blender. Focused on natural lighting, realistic materials, and a warm fall atmosphere with dynamic clouds and foliage."
@@ -74,6 +69,13 @@ const Projects = () => {
           des="Created a stylized 3D landscape featuring a weathered brick ruin, dynamic water, and layered vegetation using Blender. Focused on composition, lighting, and realism."
           src={environment}
           linkWeb=""
+        />
+        <ProjectsCard
+          title="Articulate - Hacker Escape Room"
+          des="An interactive e-learning game where players take on the role of a hacker attempting to thwart a cyber attack."
+          src={hacker}
+          // linkGit="https://github.com/Skydiver412/portfolio"
+          linkWeb="http://hccwebdev.net/~web108/escapeRoom/story.html"
         />
       </div>
     </section>

@@ -11,6 +11,7 @@ import environment from "./images/projects/projectEnvrionment.jpg";
 import farmhouse from "./images/projects/projectFarmhouse.jpg";
 import skyHighLogo from "./images/projects/projectLogo.jpg";
 import newsletter from "./images/projects/projectNewsletter.jpg";
+import hacker from "./images/projects/Welcome.png";
 
 export {
   logo,
@@ -26,4 +27,5 @@ export {
   farmhouse,
   skyHighLogo,
   newsletter,
+  hacker,
 };
