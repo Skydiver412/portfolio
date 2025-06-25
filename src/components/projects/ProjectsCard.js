@@ -2,12 +2,13 @@ import React from "react";
 import { BsGithub } from "react-icons/bs";
 import { FaGlobe } from "react-icons/fa";
 
-const ProjectsCard = ({ title, des, src, linkGit, linkWeb }) => {
+const ProjectsCard = ({ title, des, src, linkGit, linkWeb, onClick }) => {
   return (
     <div
       className="w-full p-4 h-auto rounded-lg shadow-shadowOne flex flex-col
       bg-gradient-to-r from-[#30353b] to-[#202327] group hover:bg-gradient-to-b hover:from-gray-900 hover:bg-gray-900
       transition-colors duration-1000"
+      onClick={onClick}
     >
       <div className="w-full h-[80%] overflow-hidden rounded-lg">
         <img
@@ -21,7 +22,7 @@ const ProjectsCard = ({ title, des, src, linkGit, linkWeb }) => {
           <h3 className="text-base uppercase text-designColor font-normal">
             {title}
           </h3>
-          <div className="flex gap-2">
+          <div className="flex gap-2" onClick={(e) => e.stopPropagation()}>
             {linkGit && (
               <a
                 href={linkGit}

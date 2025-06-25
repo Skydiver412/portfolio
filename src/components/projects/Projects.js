@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import Title from "../layouts/Title";
 import {
   portfolioImg,
@@ -11,8 +11,20 @@ import {
   hacker,
 } from "../../assets";
 import ProjectsCard from "./ProjectsCard";
+import ProjectModal from "./ProjectModal";
+import EscapeRoom from "../articulate/EscapeRoom";
 
 const Projects = () => {
+  const [activeProject, setActiveProject] = useState(null);
+
+  const handleOpen = (projectId) => {
+    setActiveProject(projectId);
+  };
+
+  const handleClose = () => {
+    setActiveProject(null);
+  };
+
   return (
     <section
       id="projects"
@@ -75,9 +87,18 @@ const Projects = () => {
           des="An interactive e-learning game where players take on the role of a hacker attempting to thwart a cyber attack."
           src={hacker}
           // linkGit="https://github.com/Skydiver412/portfolio"
-          linkWeb="http://hccwebdev.net/~capstone201/escape/story.html"
+          // linkWeb="http://hccwebdev.net/~capstone201/escape/story.html"
+          onClick={() => handleOpen("escapeRoom")}
         />
       </div>
+
+      <ProjectModal
+        isOpen={activeProject === "escapeRoom"}
+        title="Hacker Escape Room"
+        onClose={handleClose}
+      >
+        <EscapeRoom />
+      </ProjectModal>
     </section>
   );
 };
